@@ -16,22 +16,45 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    z-index: 100;
     background-color: white;
-    
+    box-sizing: border-box;
+    height: 60px;
+    z-index: 3;
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+    -moz-box-shadow: 0 8px 6px -6px grey;
+    box-shadow: 0px 8px 5px -6px rgba(235, 235, 235, 0.44);
+}
+
+    #drop{
+        display: none;
+    }
+
+nav ul{
+    transition-duration: 1s;
+}
+
+nav input #id, nav label{
+    display: none;
 }
 
 nav ul li {
     float: right;
     text-align: right;
-    margin-right: 45px;
+    margin-right: 65px;
     display: inline-block;
-    padding-bottom: 10px;
-}
-
-nav ul li {
+    padding-bottom: 15px;
+    padding-top: 5px;
     text-decoration: none;
     color: #1ac056;
+    transition-duration: 0.4s;
+    transition-property: font-size;
+    transition-timing-function: ease-in-out;
+   
+}
+
+nav ul li:hover {
+ font-size: 125%;    
+    padding-bottom: 10px;
 }
 
 nav ul li a {
@@ -50,9 +73,9 @@ nav ul li a:visited {
 header {
     background-image: url('../img/header-background.jpg');
     width: 100%;
-    height: 100%;
+    /*    height: 100%;*/
     background-size: cover;
-    height: 900px;
+    height: 1000px;
     top: 0;
 }
 
@@ -65,7 +88,7 @@ header h1 {
     color: white;
     font-size: 100px;
     font-family: 'Roboto';
-    font-weight: 200;
+    font-weight: 100;
     margin-top: 0;
     position: relative;
     top: 50%;
@@ -83,17 +106,23 @@ header h3 {
     font-size: 30px;
     margin-top: 0;
     font-family: 'Roboto';
-    font-weight: 200;
+    font-weight: 100;
     position: relative;
     top: 50%;
 }
 
-section#omnie{
+section#omnie {
     background-color: #f9fcfe;
     -webkit-box-shadow: 0 8px 6px -6px grey;
-	   -moz-box-shadow: 0 8px 6px -6px grey;
-	        box-shadow: 0px 8px 5px -6px rgba(235,235,235,0.44);
-  
+    -moz-box-shadow: 0 8px 6px -6px grey;
+    box-shadow: 0px 8px 5px -6px rgba(235, 235, 235, 0.44);
+}
+
+section#omnie h3 span.greentext,
+section#skills h3 span.greentext,
+section#portfolio h3 span.greentext {
+    color: #1ac056;
+    font-weight: 800;
 }
 
 section#omnie img#ja {
@@ -101,17 +130,18 @@ section#omnie img#ja {
     border: 15px solid white;
     border-radius: 10px;
     max-height: 300px;
+    
+ 
     margin-left: 15%;
-  
 }
 
 section#omnie p#omnie-text {
     line-height: 25px;
     display: inline-block;
-    width:30%;
+    width: 30%;
     margin-right: 10%;
     margin-left: 10%;
-margin-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .subheading {
@@ -146,7 +176,12 @@ section#skills p#skills-text {
     display: inline-block;
 }
 
-section#portfolio{
+section#skills .icon:hover {
+    color: #1ac056;
+    ;
+}
+
+section#portfolio {
     background-color: white;
 }
 
@@ -183,6 +218,7 @@ section#portfolio div#portfolio3 {
     height: 300px;
     background-image: url('../img/portfolio3.jpg');
     background-size: cover;
+    background-position: center center;
     background-color: orange;
 }
 
@@ -198,14 +234,7 @@ section#portfolio div#portfolio1 .layer {
     padding-top: 10%;
     padding-left: 10px;
     padding-right: 10px;
-    
 }
-
-
-
-
-
-
 
 section#portfolio div#portfolio1 .layer:hover {
     background-color: rgba(70, 130, 180, 0.5);
@@ -213,37 +242,37 @@ section#portfolio div#portfolio1 .layer:hover {
     height: 100%;
     outline: solid #fff 1px;
     outline-offset: -10px;
-    
 }
 
-
 section#portfolio div#portfolio1 .layer:hover::before {
-    
-    content: 'Projekt 1 \A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, quaerat doloremque illum dignissimos explicabo eligendi ex qui quos!'  ;
-    white-space: pre-line;   
+    content: 'Projekt 1 \A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, quaerat doloremque illum dignissimos explicabo eligendi ex qui quos!';
+    white-space: pre-line;
     font-size: 23px;
-    color:white;
+    color: white;
     font-weight: 100;
-    
 }
 
 section#portfolio div#portfolio1 .layer:hover::after {
-    
     content: '\A \A \f0c1';
     white-space: pre-line;
     font-family: FontAwesome;
     font-size: 25px;
-    color:white;
+    color: #1ac056;
     font-weight: 300;
 }
-
 
 section#portfolio div#portfolio2 .layer {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 section#portfolio div#portfolio2 .layer:hover {
@@ -254,73 +283,112 @@ section#portfolio div#portfolio2 .layer:hover {
     outline-offset: -10px;
 }
 
+section#portfolio div#portfolio2 .layer:hover::before {
+    content: 'Projekt 2 \A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, quaerat doloremque illum dignissimos explicabo eligendi ex qui quos!';
+    white-space: pre-line;
+    font-size: 23px;
+    color: white;
+    font-weight: 100;
+}
+
+section#portfolio div#portfolio2 .layer:hover::after {
+    content: '\A \A \f0c1';
+    white-space: pre-line;
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #1ac056;
+    font-weight: 300;
+}
+
 section#portfolio div#portfolio3 .layer {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 section#portfolio div#portfolio3 .layer:hover {
     background-color: rgba(70, 130, 180, 0.5);
-    width: 50%;
+    width: 100%;
     height: 100%;
     outline: solid #fff 1px;
     outline-offset: -10px;
 }
 
-
-
-
-
-footer#kontakt{
-   height: 400px;
-    background-color: #213b50 ;
+section#portfolio div#portfolio3 .layer:hover::before {
+    content: 'Projekt 3 \A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, quaerat doloremque illum dignissimos explicabo eligendi ex qui quos!';
+    white-space: pre-line;
+    font-size: 23px;
+    color: white;
+    font-weight: 100;
 }
 
+section#portfolio div#portfolio3 .layer:hover::after {
+    content: '\A \A \f0c1';
+    white-space: pre-line;
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #1ac056;
+    font-weight: 300;
+}
 
+footer#kontakt {
+    height: 350px;
+    background-color: #213b50;
+}
 
-footer#kontakt div#contact-info{
+footer#kontakt div#contact-info {
     padding-top: 50px;
     width: 45%;
-    float:left;
+    float: left;
     margin-left: 5%;
     color: white;
-    
+}
+
+footer#kontakt div#contact-info a {
+    text-decoration: none;
+    color: #1ac056;
 }
 
 footer#kontakt div#contact-info h2 {
-   font-family: 'Roboto';
+    font-family: 'Roboto';
     font-weight: 400;
+    font-size: 40px;
 }
 
-footer#kontakt div#contact-info h2 span.greentext{
-    color: green;
+footer#kontakt div#contact-info h2 span.greentext {
+    color: #1ac056;
     font-weight: 800;
+    font-family: 'Roboto';
 }
 
-
-
-
-
-
-
-footer#kontakt div#contact-form{
+footer#kontakt div#contact-form {
     width: 45%;
-   float:left;
+    float: left;
     margin-right: 5%;
     padding-top: 50px;
-    padding-bottom: 50px;  
+    padding-bottom: 50px;
 }
 
-footer#kontakt div#contact-form div#form_wrapper{
-    width: 50%;
-
+footer#kontakt div#contact-form div#form_wrapper {
+    width: 60%;
 }
 
-footer#kontakt div#contact-form input, footer#kontakt div#contact-form textarea {
+footer#kontakt div#contact-form textarea{
+    font-family: 'Lato';
+}
+
+footer#kontakt div#contact-form input,
+footer#kontakt div#contact-form textarea {
     width: 100%;
+    padding-left: 8px;
     line-height: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -330,11 +398,20 @@ footer#kontakt div#contact-form input, footer#kontakt div#contact-form textarea 
     border: 1px transparent;
     outline: none;
     color: lightgrey;
+    border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 
-footer#kontakt div#contact-form input[type="submit"]{
- 
+footer#kontakt div#contact-form input:focus,
+footer#kontakt div#contact-form textarea:focus{
+    background-color: #52687D;
+}
+
+
+
+footer#kontakt div#contact-form input[type="submit"] {
     line-height: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -346,62 +423,14 @@ footer#kontakt div#contact-form input[type="submit"]{
     color: white;
     background-color: #80c95e;
     text-transform: uppercase;
-    width:25%;
+    width: 25%;
     margin-left: 75%;
-    
-  
+    border: 1px solid white;
 }
 
-
-
-
-
-
-
-
-div#copyright{
+div#copyright {
     clear: both;
-  background-color: #395168;
+    background-color: #395168;
     color: white;
     padding-left: 5%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

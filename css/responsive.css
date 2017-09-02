@@ -1,0 +1,164 @@
+@media (max-width:1200px) {
+    header {
+        height: 500px;
+    }
+    header h1 {
+        font-size: 80px;
+    }
+    section#omnie img#ja {
+        display: block;
+        border: 15px solid white;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 400px;
+        -webkit-box-shadow: 0 8px 6px -6px grey;
+        -moz-box-shadow: 0 8px 6px -6px grey;
+        box-shadow: 0px 8px 5px -6px rgba(235, 235, 235, 0.44);
+    }
+    section#omnie p#omnie-text {
+        line-height: 30px;
+        font-size: 110%;
+        display: block;
+        width: 80%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+    section#portfolio div#portfolio1 {
+        width: 80%;
+    }
+    section#portfolio div#portfolio2 {
+        width: 80%;
+    }
+    section#portfolio div#portfolio3 {
+        width: 80%;
+    }
+    footer#kontakt {
+        height: 700px;
+        text-align: center;
+        width: 100%;
+    }
+    footer#kontakt div#contact-info {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+    }
+    footer#kontakt div#contact-form {
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 0;
+    }
+    footer#kontakt div#contact-form div#form_wrapper {
+        display: inline-block width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer#kontakt div#contact-form input[type="submit"] {
+        line-height: 40px;
+        width: 50%;
+        margin: 0;
+        margin-top: 20px;
+        font-size: 130%;
+    }
+    footer#kontakt div#contact-form input[type="text"] {
+        line-height: 40px;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 130%;
+    }
+    footer#kontakt div#contact-form textarea {
+        line-height: 40px;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 130%;
+    }
+    div#copyright {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+    nav .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    nav ul {
+        display: none;
+        margin-top: 0;
+
+    }
+    #drop:checked+ul {
+        display: block;
+        max-height: 1000px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+        background-color: rgba(255, 255, 255, 0.9);
+      
+        transition: all 200ms ease;
+    }
+    nav ul li:hover {
+        font-size: 100%;
+        padding-bottom: 20px;
+        border-right: 10px solid #1ac056;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    section#skills p#skills-text {
+  
+    margin: auto;
+        margin-bottom: 20px;
+}
+    
+    .icon {
+    margin-bottom: 20px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+@media all and (max-width: 680px) {
+    header h1 {
+        font-size: 3em;
+    }
+    header h3 {
+        font-size: 1.5em;
+    }
+    
+     section {
+        padding: 0 40px 50px;
+    
+    }
+}
+
+@media all and (max-width: 480px) {
+    
+    section {
+        padding: 0 10px 30px;
+    
+    }
+    
+    
+}
