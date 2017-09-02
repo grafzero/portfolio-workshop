@@ -79,7 +79,7 @@
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1078px) {
     nav .toggle {
         display: block;
         background-color: #fff;
@@ -127,13 +127,6 @@
     .icon {
     margin-bottom: 20px;
 }
-    
-    
-    
-    
-    
-    
-    
     
     
     
