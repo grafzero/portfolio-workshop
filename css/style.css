@@ -11,6 +11,7 @@ body {
     font-family: 'Lato';
     color: #291f1a;
     background-color: white;
+    font-size: 16px;
 }
 
 nav {
@@ -25,15 +26,25 @@ nav {
     box-shadow: 0px 8px 5px -6px rgba(235, 235, 235, 0.44);
 }
 
-    #drop{
-        display: none;
-    }
-
-nav ul{
-    transition-duration: 1s;
+#drop {
+    display: none;
 }
 
-nav input #id, nav label{
+#hamburger {
+    transition: all 50ms ease-out;
+}
+
+#hamburger:active {
+    font-size: 110%;
+    color: red;
+}
+
+nav ul {
+    transition-duration: 1s; 
+}
+
+nav input #id,
+nav label {
     display: none;
 }
 
@@ -49,11 +60,10 @@ nav ul li {
     transition-duration: 0.4s;
     transition-property: font-size;
     transition-timing-function: ease-in-out;
-   
 }
 
 nav ul li:hover {
- font-size: 125%;    
+    font-size: 125%;
     padding-bottom: 10px;
 }
 
@@ -130,8 +140,6 @@ section#omnie img#ja {
     border: 15px solid white;
     border-radius: 10px;
     max-height: 300px;
-    
- 
     margin-left: 15%;
 }
 
@@ -381,7 +389,7 @@ footer#kontakt div#contact-form div#form_wrapper {
     width: 60%;
 }
 
-footer#kontakt div#contact-form textarea{
+footer#kontakt div#contact-form textarea {
     font-family: 'Lato';
 }
 
@@ -403,13 +411,10 @@ footer#kontakt div#contact-form textarea {
     transition-duration: 0.5s;
 }
 
-
 footer#kontakt div#contact-form input:focus,
-footer#kontakt div#contact-form textarea:focus{
+footer#kontakt div#contact-form textarea:focus {
     background-color: #52687D;
 }
-
-
 
 footer#kontakt div#contact-form input[type="submit"] {
     line-height: 25px;
